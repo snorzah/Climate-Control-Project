@@ -1,4 +1,4 @@
-This was a project I put together to test my knowledge in various arduino programs and acts like a small-scale version for a real climate control project. I used a DHT11, DC Motor, 3 buttons, an I2C LCD, and an LED to act as a heater since I don't own a real heater.
+This was a project I put together to test my knowledge in various arduino modules and acts like a small-scale version for a real climate control project. I used a DHT11, DC Motor, 3 buttons, an I2C LCD, and an LED to act as a heater since I don't own a real heater.
 
 The ports go as the following, though you could likely figure out by looking at the code:
 **LED**
