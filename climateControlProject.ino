@@ -91,16 +91,20 @@ void loop()
         // if it's too hot, turn on the fan
           if(temp>tempThreshold){
             analogWrite(APin, DCmotorspeed);
+            digitalWrite(heaterPin, LOW);
           } else {
             analogWrite(APin, 0);
+            digitalWrite(heaterPin, LOW);
           }
       }
       if (state == HIGH){
         // if it's too cold, turn on the heater
           if(temp<tempThreshold){
             digitalWrite(heaterPin, HIGH);
+            analogWrite(APin, 0);
           } else {
             digitalWrite(heaterPin, LOW);
+            analogWrite(APin, 0);
           }
       }
       
@@ -112,11 +116,11 @@ void loop()
       
       // Display State based on whether its hot or cold
       if (state == LOW){
-        lcd.print("COLD");
+        lcd.print("HOT ");
         Serial.println(state);
       }
       if (state == HIGH){
-        lcd.print("HOT ");
+        lcd.print("COLD");
         Serial.println(state);
       }
       // Reset the LCD cursor
