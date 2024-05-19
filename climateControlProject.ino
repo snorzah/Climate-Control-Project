@@ -2,7 +2,6 @@
 // Import Libraries
 #include <LiquidCrystal_I2C.h>
 #include <Adeept_DHT11.h>
-#include <Wire.h>
 // Setup w/ Variables
 // DHT11
 Adeept_DHT11 Adeept_dht11;
